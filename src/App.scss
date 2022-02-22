@@ -1,0 +1,29 @@
+@import './maps';
+
+$textColor: papayawhip;
+$background: palevioletred;
+
+body {
+    background: $textColor;
+    color: $background;
+}
+
+$navcolor: #E2356F;
+.apply-primary {
+    background-color: $navcolor;
+}
+
+.btn-styled {
+    color: white;
+    background-color: $background;
+}
+
+.btn-styled:hover {
+    color: white;
+    background-color: #ff82ab;
+}
+
+.btn-styled:active, .btn-styled:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
