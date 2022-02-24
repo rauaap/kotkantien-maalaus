@@ -1,0 +1,1 @@
+export const mainText = 'Tervetuloa Kotkantien maalauksen kotisivuille. Toteutamme kaiken kokoisia maalaus- ja tapetointitöitä ammattitaitoisesti ja laadukkaasti yhteistyössä asiakkaidemme kanssa. Oli sitten kyseessä yksityisasunto tai yritystila, me hoidamme paikan yleisilmeen kuntoon toivomallanne tavalla.'

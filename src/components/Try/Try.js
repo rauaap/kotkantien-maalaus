@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import {Button, Container} from 'react-bootstrap'
 import styled from 'styled-components'
+import {ImageGradient} from '../Generic'
 import colors from './colors'
 import imgInterior from '../../assets/interior.png'
 
@@ -29,7 +30,6 @@ const ColorButton = styled(Button)`
 
 const BigPicture = styled.img`
     transition-duration: 1s;
-    border-radius: 2rem;
     max-height: 50vh;
     max-width: 75vw;
 `
@@ -37,11 +37,15 @@ const BigPicture = styled.img`
 const TryView = ({buttons, color}) => {
     return (
         <>
-            <BigPicture style={{backgroundColor: color}}
-            className="mx-auto d-block my-2"
-            alt="interior"
-            src={imgInterior}>
-            </BigPicture>
+        <div className="d-flex justify-content-center">
+            <ImageGradient gwidth="5" className="mx-auto">
+                <BigPicture style={{backgroundColor: color}}
+                className="my-2"
+                alt="interior"
+                src={imgInterior}>
+                </BigPicture>
+            </ImageGradient>
+        </div>
             <ButtonContainer className="px-0">
                 {buttons.map(v => v)}
             </ButtonContainer>

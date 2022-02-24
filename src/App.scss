@@ -1,16 +1,17 @@
 @import './maps';
 
 $textColor: papayawhip;
-$background: palevioletred;
+// $background: palevioletred;
+$background: #E2356F;
 
 body {
     background: $textColor;
     color: $background;
 }
 
-$navcolor: #E2356F;
 .apply-primary {
-    background-color: $navcolor;
+    background-color: $background;
+    color: papayawhip;
 }
 
 .btn-styled {
